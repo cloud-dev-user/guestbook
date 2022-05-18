@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('build CI stage ') {
       steps {
-        sh 'mvn clean install'
+        sh 'mvn clean package'
       }
     }
 
