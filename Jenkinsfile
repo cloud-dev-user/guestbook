@@ -12,5 +12,11 @@ pipeline {
       }
     }
 
+    stage('test your jar file ') {
+      steps {
+        sh 'java -cp guestbook-1.2.0-SNAPSHOT.jar de.tudresden.inf.st.guestbook'
+      }
+    }
+
   }
 }
