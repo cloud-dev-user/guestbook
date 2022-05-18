@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('build CI stage ') {
       steps {
-        sh 'mvn clean package'
+        sh ' ./mvnw clean package'
       }
     }
 
