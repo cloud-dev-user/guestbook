@@ -8,7 +8,9 @@ pipeline {
   stages {
     stage('build CI stage ') {
       steps {
-        sh ' ./mvnw clean package'
+        sh '''java -version
+javac -version 
+./mvnw clean package'''
       }
     }
 
