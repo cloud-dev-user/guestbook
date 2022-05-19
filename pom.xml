@@ -153,14 +153,13 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
-  <repository>
-	  <id>releases</id>
-    <url>http://192.168.1.3:8099/nexus/content/repositories/releases/</url>
-  </repository>
-  <snapshotRepository>
-	  <id>snapshots</id>
-    <url>http://192.168.1.3:8099/nexus/content/repositories/snapshots/</url>
-  </snapshotRepository>
-</distributionManagement>
-
+             <repository>
+	         <id>releases</id>
+                    <url>http://192.168.1.3:8099/nexus/content/repositories/releases/</url>
+             </repository>
+             <snapshotRepository>
+	         <id>snapshots</id>
+                    <url>http://192.168.1.3:8099/nexus/content/repositories/snapshots/</url>
+             </snapshotRepository>
+        </distributionManagement>
 </project>
