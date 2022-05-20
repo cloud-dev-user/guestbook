@@ -14,8 +14,7 @@ pipeline {
 
     stage('Deploy to tomcat ') {
       steps {
-        sh '''rm *.jar
-curl -L -X GET  "http://192.168.1.3:8099/service/rest/v1/search/assets/download?sort=version&repository=maven-snapshots&maven.groupId=de.tudresden.inf.st&maven.artifactId=guestbook&maven.extension=jar" -H "accept: application/json"
+        sh '''curl -L -X GET  "http://192.168.1.3:8099/service/rest/v1/search/assets/download?sort=version&repository=maven-snapshots&maven.groupId=de.tudresden.inf.st&maven.artifactId=guestbook&maven.extension=jar" -H "accept: application/json"
 java -cvf  guestbook.war *.jar 
 cp guestbook.war /opt/tomcat/apache-tomcat-9.0.63/webapps/
 
