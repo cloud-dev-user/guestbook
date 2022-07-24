@@ -53,6 +53,7 @@ public class Application {
 	 * Some initializing code to populate our database with some {@link GuestbookEntry}s. Beans of type
 	 * {@link CommandLineRunner} will be executed on application startup which makes them a convenient way to run
 	 * initialization code.
+	 *  this is pretesh branch
 	 */
 	@Bean
 	CommandLineRunner init(GuestbookRepository guestbook) {
